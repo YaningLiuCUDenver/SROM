@@ -27,9 +27,9 @@ Example Usage
 --------------
 
 ```python
-from SROMPy.postprocess import Postprocessor
-from SROMPy.srom import SROM
-from SROMPy.target import NormalRandomVariable
+from SROMPy.postprocess.Postprocessor import Postprocessor
+from SROMPy.srom.SROM import SROM
+from SROMPy.target.NormalRandomVariable import NormalRandomVariable
 
 #Initialize Normal random variable object to be modeled by SROM:
 normal = NormalRandomVariable(mean=3., std_dev=1.5)
@@ -40,7 +40,7 @@ srom.optimize(normal)
 
 #Compare the CDF of the SROM & target normal variable:
 post_processor = Postprocessor(srom, normal)
-post_processor.compare_CDFs()
+post_processor.compare_cdfs()
 ```
   
 The above code snippet produces the following CDF comparison plot: 
