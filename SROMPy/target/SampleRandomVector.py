@@ -20,7 +20,7 @@ Class for defining a sample-based random vector with empirical estimators
 import numpy as np
 from scipy import interpolate
 
-from SROMPy.target import RandomVector
+from SROMPy.target.RandomVector import RandomVector
 
 
 class SampleRandomVector(RandomVector):

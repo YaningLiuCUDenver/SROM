@@ -85,7 +85,7 @@ class Postprocessor:
             # Remove latex math symbol from plot name
             if plot_name is not None:
                 plot_name_ = plot_name + "_" + variable + ".pdf"
-                plot_name_ = plot_name_.translate(None, "$")
+                # plot_name_ = plot_name_.translate(None, "$")
             else:
                 plot_name_ = None
             if x_limits is not None:
@@ -151,7 +151,7 @@ class Postprocessor:
             else:
                 plot_name_ = None
 
-            print "samples = ", samples[:, i]
+            print("samples = ", samples[:, i])
             self.plot_pdfs(samples[:, i], probabilities.flatten(),
                            x_grids[:, i], target_cdfs[:, i], variable, y_label,
                            plot_name_, show_figure)
@@ -474,7 +474,7 @@ class Postprocessor:
                 else:
                     variable_names.append(variable + "_" + str(i + 1))
 
-        print "variable names = ", variable_names
+        print("variable names = ", variable_names)
 
         for i in range(random_variable_1.dim):
 

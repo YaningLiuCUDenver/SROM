@@ -21,7 +21,7 @@ import copy
 import os
 import numpy as np
 
-from SROMPy.optimize import Optimizer
+from SROMPy.optimize.Optimizer import Optimizer
 from SROMPy.target.RandomEntity import RandomEntity
 
 
